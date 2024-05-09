@@ -36,8 +36,15 @@ Bellow are described the steps to deploy the proposed solution:
     * VPCName: Existing VPC where selected Subnet is associated
     * VSRImage:  This field use an existing public image but customer can create their own image and insert the URL here. Instructions to create custom image are found here (link to github repo)
     * VCPU: VCPU associated to the job definition. This value can be overwritten when jobs are submitted
-
-
+4. After deploying, verify that two s3 bucket has been created. They start with vsr-input and vsr-output
+5. Upload a SD file to vsr-input-xxxx-{region-name} bucket
+6. Go to Batch from AWS console and validate a new queue (queue-vsr) and compute environment (VideoSuperResolution) have been created
+7. Inside Jobs (left-side) click on "submit  a new job, selecting the proper job definition (vsr-jobDefiniton-xxxx) and queue (queue-vsr)
+8. In the next screen,  click  on "Load from job definition" and modify the name of input and output files
+9. Review and submit the job and wait until Status transitions to runnable and then Succeeded
+10. Go to output S3 bucket (vsr-output-xxxx-{region-name}) to validate a Super-resolution file has been created and uploaded to S3 automatically
+11. Compare side-to-side subjective visual quality using open-source tool [compare-video](https://github.com/pixop/video-compare)
+    
 ### Extend the solution 
 
 Building your container container
