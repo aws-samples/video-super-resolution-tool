@@ -52,7 +52,7 @@ During deployment using Cloudformation template,  a parameter (VSRImage) is requ
 ### Prerequisites
    - Ubuntu machine 22.04 to build a docker image
    - Docker installed in Ubuntu 22.04
-   - AWS [ECR](https://aws.amazon.com/ecr/) repository already created.Instructions can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html#cli-create-repository)
+   - AWS [ECR](https://aws.amazon.com/ecr/) repository already created. Instructions can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html#cli-create-repository)
 
 ### Building custom docker image   
    - From Ubuntu machine clone [Intel® Library for Video Super Resolution](https://github.com/OpenVisualCloud/Video-Super-Resolution-Library)
