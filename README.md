@@ -45,7 +45,7 @@ Bellow are described the steps to deploy the proposed solution:
 10. Go to output S3 bucket (vsr-output-xxxx-{region-name}) to validate a Super-resolution file has been created and uploaded to S3 automatically
 11. Compare side-by-side subjective visual quality using open-source tool [compare-video](https://github.com/pixop/video-compare)
     
-### Extend the solution 
+## Extend the solution 
 
 During deployment using Cloudformation template,  a parameter (VSRImage) is requested. You can use the default value or create your own container using [Intel® Library for Video Super Resolution](https://github.com/OpenVisualCloud/Video-Super-Resolution-Library) project as baseline.  In addition you can make adjustments to ffmpeg libraries (i.e. adding x264, x265, jpeg-xs libraries). In this implementation is also included aws-cli with S3 read/write capabilities.  All those changes are detailed in Dockerfile.
 
