@@ -31,11 +31,11 @@ Bellow are described the steps to deploy the proposed solution:
 1. Download [template.yml](https://github.com/aws-samples/video-super-resolution-tool/blob/main/template.yml)
 2. Go to CloudFormation from AWS Console  to create a new stack using  template.yml
 3. The template allows definition of next parameters :
-    * Memory :  Memory associated to the job definition. This value can be overwritten when jobs are submitted
-    * Subnet:  AWS Batch will deploy proper EC2 instance types ( c5.2xlarge, c6i.2xlarge, and c7i.2xlarge) in selected customer subnet with Internet access
-    * VPCName: Existing VPC where selected Subnet is associated
-    * VSRImage:  This field use an existing public image but customer can create their own image. Instructions to create custom image are found [here](#extend-the-solution)
-    * VCPU: VCPU associated to the job definition. This value can be overwritten when jobs are submitted
+    * **Memory** :  Memory associated to the job definition. This value can be overwritten when jobs are submitted
+    * **Subnet**:  AWS Batch will deploy proper EC2 instance types ( c5.2xlarge, c6i.2xlarge, and c7i.2xlarge) in selected customer subnet with Internet access
+    * **VPCName**: Existing VPC where selected Subnet is associated
+    * **VSRImage**:  This field use an existing public image but customer can create their own image. Instructions to create custom image are found [here](#extend-the-solution)
+    * **VCPU**: VCPU associated to the job definition. This value can be overwritten when jobs are submitted
 4. After deploying, verify that two s3 bucket has been created. They start with vsr-input and vsr-output
 5. Upload a SD file to vsr-input-xxxx-{region-name} bucket
 6. Go to Batch from AWS console and validate a new queue (queue-vsr) and compute environment (VideoSuperResolution) have been created
