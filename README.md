@@ -53,14 +53,14 @@ Building your container container
 
 ## Cost
 
-AWS Batch optimizes compute costs by paying only for used resources. Using Spot instances leverages unused EC2 capacity for significant savings over On-Demand instances. Benchmark different instance types and sizes to find the optimal workload configuration. Test options like GPU versus CPU to balance performance and cost.
+AWS Batch optimizes compute costs by paying only for used resources. Using Spot instances leverages unused EC2 capacity for significant savings over On-Demand instances. Benchmark different instance types and sizes to find the optimal workload configuration.
 
 ## Clean up
 
 To prevent unwanted charges after evaluating this solution, delete created resources by:
 
-1. Delete all objects in the Amazon S3 bucket used for testing. I can remove these objects from the S3 console by selecting all objects and clicking "Delete."
-2. Destroy the AWS CDK stack that was deployed for testing. To do this, I open a terminal in the Git repository and run: `task cdk:destroy`
+1. Delete all objects in the Amazon S3 bucket used for testing. You can remove these objects from the S3 console by selecting all objects and clicking "Delete."
+2. Delete the AWS Cloudformation stack from AWS Console
 3. Verify that all resources have been removed by checking the AWS console. This ensures no resources are accidentally left running, which would lead to unexpected charges.
 
 ## References
