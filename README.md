@@ -2,15 +2,14 @@
 
 <!--TOC-->
 
-- [Create a managed Video super-resolution workflow for your media jobs using AWS Batch](#create-a-managed-super-resolution-workflow-for-your-media-jobs-using-aws-batch)
-  - [Introduction](#introduction)
-  - [Disclaimer And Data Privacy Notice](#disclaimer-and-data-privacy-notice)
-  - [Architecture](#architecture)
-  - [Deploy the solution with AWS Cloudformation](#deploy-using-cloudformation)
-  - [Extend the solution](#extend-the-solution)
-  - [Cost](#cost)
-  - [Clean up](#clean-up)
-   - [References](#References)
+- [Introduction](#introduction)
+- [Disclaimer And Data Privacy Notice](#disclaimer-and-data-privacy-notice)
+- [Architecture](#architecture)
+- [Deploy the solution with AWS Cloudformation](#deploy-using-cloudformation)
+- [Extend the solution](#extend-the-solution)
+- [Cost](#cost)
+- [Clean up](#clean-up)
+- [References](#References)
 
 <!--TOC-->
 
