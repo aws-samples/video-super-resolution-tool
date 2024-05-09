@@ -34,7 +34,7 @@ Bellow are described the steps to deploy the proposed solution:
     * Memory :  Memory associated to the job definition. This value can be overwritten when jobs are submitted
     * Subnet:  AWS Batch will deploy proper EC2 instance types ( c5.2xlarge, c6i.2xlarge, and c7i.2xlarge) in selected customer subnet with Internet access
     * VPCName: Existing VPC where selected Subnet is associated
-    * VSRImage:  This field use an existing public image but customer can create their own image and insert the URL here. Instructions to create custom image are found [here](#extend-the-solution)
+    * VSRImage:  This field use an existing public image but customer can create their own image. Instructions to create custom image are found [here](#extend-the-solution)
     * VCPU: VCPU associated to the job definition. This value can be overwritten when jobs are submitted
 4. After deploying, verify that two s3 bucket has been created. They start with vsr-input and vsr-output
 5. Upload a SD file to vsr-input-xxxx-{region-name} bucket
@@ -47,20 +47,19 @@ Bellow are described the steps to deploy the proposed solution:
     
 ## Extend the solution 
 
-During deployment using Cloudformation template,  a parameter (VSRImage) is requested. You can use the default value or create your own container using [Intel® Library for Video Super Resolution](https://github.com/OpenVisualCloud/Video-Super-Resolution-Library) project as baseline.  In addition you can make adjustments to ffmpeg libraries (i.e. adding x264, x265, jpeg-xs libraries). In this implementation is also included aws-cli with S3 read/write capabilities.  All those changes are detailed in Dockerfile.
+During deployment using Cloudformation template,  a parameter (VSRImage) is requested. You can use the default value or create your own docker image using [Intel® Library for Video Super Resolution](https://github.com/OpenVisualCloud/Video-Super-Resolution-Library) project as baseline.  In addition you can make adjustments to ffmpeg libraries (i.e. adding x264, x265, jpeg-xs libraries). In this implementation is also included aws-cli with S3 read/write capabilities.  All those changes are detailed in Dockerfile.
 
 ### Prerequisites
-   - Ubuntu machine 22.04 to build a container
+   - Ubuntu machine 22.04 to build a docker image
    - Docker installed in Ubuntu 22.04
-   - AWS [ECR](https://aws.amazon.com/ecr/) repository already created, instructions can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html#cli-create-repository)
+   - AWS [ECR](https://aws.amazon.com/ecr/) repository already created.Instructions can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html#cli-create-repository)
 
-### Building custom container   
+### Building custom docker image   
    - From Ubuntu machine clone [Intel® Library for Video Super Resolution](https://github.com/OpenVisualCloud/Video-Super-Resolution-Library)
    - copy  [main.sh](https://github.com/aws-samples/video-super-resolution-tool/edit/main/container/main.sh) and [Dockerfile.2204](https://github.com/aws-samples/video-super-resolution-tool/edit/main/container/Dockerfile.2204) into Video-Super-Resolution-Library folder
    - Download and unzip [awscli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) inside Video-Super-Resolution-Library folder
    - Inside Video-Super-Resolution-Library folder execute `sudo docker build -f Dockerfile.2204 -t vsr-intel`
-   - Follow ECR instructions to push a container to an existing repository. Instruction can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html#cli-push-image)
-
+   - Follow ECR instructions to push a docker image to an existing repository. Instruction can be found [here](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html#cli-push-image)
 
 ## Cost
 
