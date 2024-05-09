@@ -70,7 +70,7 @@ AWS Batch optimizes compute costs by paying only for used resources. Using Spot 
 
 To prevent unwanted charges after evaluating this solution, delete created resources by:
 
-1. Delete all objects in the Amazon S3 bucket used for testing. You can remove these objects from the S3 console by selecting all objects and clicking "Delete."
+1. Delete all objects in the Amazon S3 bucket used for testing. You can remove these objects from the S3 console by selecting all objects and clicking "Delete"
 2. Delete the AWS Cloudformation stack from AWS Console
 3. Verify that all resources have been removed by checking the AWS console. This ensures no resources are accidentally left running, which would lead to unexpected charges.
 
