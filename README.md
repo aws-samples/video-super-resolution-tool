@@ -1,9 +1,5 @@
 # AWS Batch Video Super-Resolution powered by the Intel® Library for Video Super Resolution
 
-_Whitepaper short-version : <https://dl.acm.org/doi/10.1145/3638036.3640290>_
-
-_Whitepaper standard-version: <https://www.intel.com/content/www/us/en/content-details/820769/aws-compute-video-super-resolution-powered-by-the-intel-library-for-video-super-resolution.html>_
-
 <!--TOC-->
 
 - [Create a managed Video super-resolution workflow for your media jobs using AWS Batch](#create-a-managed-super-resolution-workflow-for-your-media-jobs-using-aws-batch)
@@ -56,7 +52,8 @@ To prevent unwanted charges after evaluating this solution, delete created resou
 ## References
 1. [Intel® Library for Video Super Resolution](https://github.com/OpenVisualCloud/Video-Super-Resolution-Library)
 2. [ffmpeg](https://ffmpeg.org)
-3. [Whitepaper](https://dl.acm.org/doi/10.1145/3638036.3640290)
+3. [Whitepaper short-version](https://dl.acm.org/doi/10.1145/3638036.3640290)
+4. [Whitepaper long-version] (https://www.intel.com/content/www/us/en/content-details/820769/aws-compute-video-super-resolution-powered-by-the-intel-library-for-video-super-resolution.html)
 
 
 ## Security
