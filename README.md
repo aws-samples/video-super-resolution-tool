@@ -1,6 +1,7 @@
 # AWS Batch Video Super-Resolution powered by the Intel® Library for Video Super Resolution
 
-_Whitepaper : <https://dl.acm.org/doi/10.1145/3638036.3640290>_
+_Whitepaper short-version : <https://dl.acm.org/doi/10.1145/3638036.3640290>_
+_Whitepaper standard-version: <https://www.intel.com/content/www/us/en/content-details/820769/aws-compute-video-super-resolution-powered-by-the-intel-library-for-video-super-resolution.html>_
 
 <!--TOC-->
 
