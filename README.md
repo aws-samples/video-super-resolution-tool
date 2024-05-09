@@ -34,7 +34,7 @@ Bellow are described the steps to deploy the proposed solution:
     * Memory :  Memory associated to the job definition. This value can be overwritten when jobs are submitted
     * Subnet:  AWS Batch will deploy proper EC2 instance types ( c5.2xlarge, c6i.2xlarge, and c7i.2xlarge) in selected customer subnet with Internet access
     * VPCName: Existing VPC where selected Subnet is associated
-    * VSRImage:  This field use an existing public image but customer can create their own image and insert the URL here. Instructions to create custom image are found here (link to github repo)
+    * VSRImage:  This field use an existing public image but customer can create their own image and insert the URL here. Instructions to create custom image are found [here](#extend-the-solution)
     * VCPU: VCPU associated to the job definition. This value can be overwritten when jobs are submitted
 4. After deploying, verify that two s3 bucket has been created. They start with vsr-input and vsr-output
 5. Upload a SD file to vsr-input-xxxx-{region-name} bucket
