@@ -28,7 +28,7 @@ When you deploy this solution, scripts will download different packages with dif
 
 ## Deploy using cloudformation
 Bellow are described the steps to deploy the proposed solution:
-1. Download template.yml from github repo (link to github repo)
+1. Download [template.yml](https://github.com/aws-samples/video-super-resolution-tool/blob/main/template.yml)
 ### Extend the solution 
 
 Building your container container
