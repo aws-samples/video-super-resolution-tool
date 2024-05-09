@@ -56,7 +56,9 @@ During deployment using Cloudformation template,  a parameter (VSRImage) is requ
 
 ### Building custom container   
    - From Ubuntu machine clone [Intel® Library for Video Super Resolution](https://github.com/OpenVisualCloud/Video-Super-Resolution-Library)
-   - copy  [main.sh](https://github.com/aws-samples/video-super-resolution-tool/edit/main/container/main.sh) and [Dockerfile.2204](https://github.com/aws-samples/video-super-resolution-tool/edit/main/container/Dockerfile.2204) into Video-Super-Resolution-Library folder.
+   - copy  [main.sh](https://github.com/aws-samples/video-super-resolution-tool/edit/main/container/main.sh) and [Dockerfile.2204](https://github.com/aws-samples/video-super-resolution-tool/edit/main/container/Dockerfile.2204) into Video-Super-Resolution-Library folder
+   - Download and unzip [awscli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) inside Video-Super-Resolution-Library folder
+   - inside Video-Super-Resolution-Library folder execute `sudo docker build -f Dockerfile.2204 -t vsr-intel`
 ## Cost
 
 AWS Batch optimizes compute costs by paying only for used resources. Using Spot instances leverages unused EC2 capacity for significant savings over On-Demand instances. Benchmark different instance types and sizes to find the optimal workload configuration.
