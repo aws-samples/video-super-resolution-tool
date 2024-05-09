@@ -27,9 +27,8 @@ When you deploy this solution, scripts will download different packages with dif
 ![Architecture](architecture.png)
 
 ## Deploy using cloudformation
-Cloudformation template <template.yml>
-
-
+Bellow are described the steps to deploy the proposed solution:
+1. Download template.yml from github repo (link to github repo)
 ### Extend the solution 
 
 Building your container container
