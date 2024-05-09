@@ -47,10 +47,14 @@ Bellow are described the steps to deploy the proposed solution:
     
 ### Extend the solution 
 
-During deployment using Cloudformation template,  a parameter (VSRImage) is requested. You can use the default value or create your own container using [Intel® Library for Video Super Resolution](https://github.com/OpenVisualCloud/Video-Super-Resolution-Library) project as baseline.  In addition you can make adjustments to ffmpeg libraries (i.e. adding x264, x265, jpeg-xs libraries). In this implementation is also included aws-cli with S3 read/write capabilities.  All those changes are included in a Dockerfile.
+During deployment using Cloudformation template,  a parameter (VSRImage) is requested. You can use the default value or create your own container using [Intel® Library for Video Super Resolution](https://github.com/OpenVisualCloud/Video-Super-Resolution-Library) project as baseline.  In addition you can make adjustments to ffmpeg libraries (i.e. adding x264, x265, jpeg-xs libraries). In this implementation is also included aws-cli with S3 read/write capabilities.  All those changes are detailed in Dockerfile.
 
+### Prerequisites
+   - Ubuntu machine 22.04 to build a container
+   - Docker installed in Ubuntu 22.04
+   - AWS ECR repository (public/private) already created
 
-
+### Building custom container
 ## Cost
 
 AWS Batch optimizes compute costs by paying only for used resources. Using Spot instances leverages unused EC2 capacity for significant savings over On-Demand instances. Benchmark different instance types and sizes to find the optimal workload configuration.
