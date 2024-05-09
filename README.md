@@ -43,7 +43,7 @@ Bellow are described the steps to deploy the proposed solution:
 8. In the next screen,  click  on "Load from job definition" and modify the name of input and output files
 9. Review and submit the job and wait until Status transitions to runnable and then Succeeded
 10. Go to output S3 bucket (vsr-output-xxxx-{region-name}) to validate a Super-resolution file has been created and uploaded to S3 automatically
-11. Compare side-to-side subjective visual quality using open-source tool [compare-video](https://github.com/pixop/video-compare)
+11. Compare side-by-side subjective visual quality using open-source tool [compare-video](https://github.com/pixop/video-compare)
     
 ### Extend the solution 
 
