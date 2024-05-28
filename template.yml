@@ -41,8 +41,6 @@ Resources:
   outputS3Bucket:
       Type: "AWS::S3::Bucket"
       Properties:
-          BucketName:
-
           BucketName: !Join 
             - '-'
             - - vsr-output
