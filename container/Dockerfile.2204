@@ -67,6 +67,7 @@ ldd ${PREFIX}/bin/ffmpeg | cut -d ' ' -f 3 | xargs -i cp {} /usr/local/lib/ && \
 
 # Copy the raisr filters from the raisr library
 RUN mkdir /raisrfolder
+RUN mkdir /raisrfolder/files
 RUN cp -r /opt/build/Video-Super-Resolution-Library/filters* /raisrfolder
 
 FROM ubuntu:22.04 AS base
