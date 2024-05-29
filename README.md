@@ -58,7 +58,7 @@ During deployment using Cloudformation template,  a parameter (VSRImage) is requ
    - From Ubuntu machine clone [Intel® Library for Video Super Resolution](https://github.com/OpenVisualCloud/Video-Super-Resolution-Library)
    - copy  [main.sh](https://github.com/aws-samples/video-super-resolution-tool/edit/main/container/main.sh) and [Dockerfile.2204](https://github.com/aws-samples/video-super-resolution-tool/edit/main/container/Dockerfile.2204) into Video-Super-Resolution-Library folder
    - Download and unzip [awscli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) inside Video-Super-Resolution-Library folder
-   - Inside Video-Super-Resolution-Library folder execute `sudo docker build -f Dockerfile.2204 -t vsr-intel`
+   - Inside Video-Super-Resolution-Library folder execute `sudo docker build -f Dockerfile.2204 -t vsr-intel .`
    - Follow ECR [instructions](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html#cli-push-image) to push a docker image to an existing repository
      
 ## Cost
