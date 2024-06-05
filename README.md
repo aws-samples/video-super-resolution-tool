@@ -78,6 +78,7 @@ To prevent unwanted charges after evaluating this solution, delete created resou
 2. [ffmpeg](https://ffmpeg.org)
 3. [Whitepaper short-version](https://dl.acm.org/doi/10.1145/3638036.3640290)
 4. [Whitepaper extended-version](https://www.intel.com/content/www/us/en/content-details/820769/aws-compute-video-super-resolution-powered-by-the-intel-library-for-video-super-resolution.html)
+5. [AWS batch with ffmpeg](https://github.com/aws-samples/aws-batch-with-ffmpeg)
 
 
 ## Security
